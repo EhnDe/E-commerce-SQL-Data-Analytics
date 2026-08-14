@@ -132,3 +132,191 @@ CREATE TABLE zepto (
       - Create a database and run the SQL file
 
       - Import the dataset (convert to UTF-8 if necessary)
+      
+      - Data exploration 
+
+2. **Key Business Insights**
+
+# 📊 Zepto Inventory Data Analytics — Project Insights
+
+This project analyzes Zepto's e-commerce inventory data to uncover insights into **product pricing, discounts, inventory availability, category performance, and value-for-money opportunities**.
+
+## 🔍 Key Business Insights
+
+### 1. 🏷️ Top 10 Best-Value Products by Discount
+
+The analysis identified the products offering the highest discount percentages:
+
+| Product                                        | MRP (₹) | Discount (%) |
+| ---------------------------------------------- | ------: | -----------: |
+| Dukes Waffy Chocolate Wafers                   |      45 |          51% |
+| Dukes Waffy Orange Wafers                      |      45 |          51% |
+| Dukes Waffy Strawberry Wafers                  |      45 |          51% |
+| Ceres Foods Fish Mustard Instant Liquid Masala |     220 |          50% |
+| Ceres Foods Laal Maas Instant Liquid Masala    |     220 |          50% |
+| Ceres Foods Nalli Nihari Instant Liquid Masala |     220 |          50% |
+| Chef's Basket Durum Wheat Elbow Pasta          |     160 |          50% |
+| Chef's Basket Durum Wheat Fusilli Pasta        |     160 |          50% |
+| Chef's Basket Durum Wheat Penne Pasta          |     160 |          50% |
+| Dukes Waffy Chocolate Wafer Rolls              |     150 |          50% |
+
+**Insight:** The highest discounts reached **51%**, with Dukes Waffy wafer products offering the strongest discounts. Several pasta and instant-meal products also offered discounts of **50%**, indicating aggressive promotional pricing in these product segments.
+
+---
+
+### 2. 📦 High-MRP Products That Are Out of Stock
+
+Several relatively high-value products were unavailable despite having high MRP values:
+
+| Product                                      | MRP (₹) |
+| -------------------------------------------- | ------: |
+| Patanjali Cow's Ghee                         |     565 |
+| MamyPoko Pants Standard Diapers, Extra Large |     399 |
+| Aashirvaad Atta With Multigrains             |     315 |
+| Everest Kashmiri Lal Chilli Powder           |     310 |
+
+**Insight:** Stockouts among higher-priced products may represent **lost revenue opportunities** and highlight products that could require closer inventory monitoring.
+
+---
+
+### 3. 💰 Estimated Revenue by Category
+
+The estimated revenue analysis shows significant variation across product categories.
+
+| Category              | Estimated Revenue (₹) |
+| --------------------- | --------------------: |
+| Cooking Essentials    |               337,131 |
+| Munchies              |               337,131 |
+| Personal Care         |               270,849 |
+| Paan Corner           |               270,849 |
+| Packaged Food         |               224,385 |
+| Ice Cream & Desserts  |               224,385 |
+| Chocolates & Candies  |               224,385 |
+| Home & Cleaning       |               122,661 |
+| Health & Hygiene      |                64,180 |
+| Dairy, Bread & Batter |                55,051 |
+| Beverages             |                55,051 |
+| Biscuits              |                25,019 |
+| Meats, Fish & Eggs    |                20,693 |
+| Fruits & Vegetables   |                10,846 |
+
+**Insight:** **Cooking Essentials and Munchies** generated the highest estimated revenue, while **Fruits & Vegetables** generated the lowest. This highlights major differences in revenue contribution across categories.
+
+---
+
+### 4. 💎 High-MRP Products with Low Discounts
+
+The analysis identified products with an **MRP above ₹500 and discounts below 10%**.
+
+Examples include:
+
+| Product                                | MRP (₹) | Discount (%) |
+| -------------------------------------- | ------: | -----------: |
+| Dhara Kachi Ghani Mustard Oil Jar      |   1,250 |           8% |
+| Saffola Gold (Jar)                     |   1,240 |           0% |
+| Dhara Filtered Groundnut Oil (Jar)     |   1,050 |           1% |
+| Fortune Rice Bran Health Oil           |   1,050 |           1% |
+| Fortune Soyabean Oil                   |   1,005 |           0% |
+| Surf Excel Matic Powder Front Load     |     810 |           7% |
+| Surf Excel Matic Top Load              |     720 |           9% |
+| Pedigree Puppy Dry Dog Food            |     690 |           6% |
+| Lizol Double Concentrate Floor Cleaner |     650 |           8% |
+| Dove Daily Shine Shampoo               |     645 |           5% |
+
+**Insight:** Several premium and household products maintain **very low discounts despite high MRP**, suggesting stronger pricing power or lower promotional dependency in these product segments.
+
+---
+
+### 5. 🥬 Top 5 Categories by Average Discount
+
+| Category             | Average Discount (%) |
+| -------------------- | -------------------: |
+| Fruits & Vegetables  |               15.46% |
+| Meats, Fish & Eggs   |               11.03% |
+| Packaged Food        |                8.32% |
+| Ice Cream & Desserts |                8.32% |
+| Chocolates & Candies |                8.32% |
+
+**Insight:** **Fruits & Vegetables** offered the highest average discount at **15.46%**, followed by **Meats, Fish & Eggs at 11.03%**. This suggests that fresh-food categories rely more heavily on promotional pricing.
+
+---
+
+### 6. ⚖️ Best Value by Price per Gram
+
+Products weighing more than 100g were evaluated based on their **discounted selling price per gram**.
+
+| Product                                    | Weight (g) | Selling Price (₹) | Price/g (₹) |
+| ------------------------------------------ | ---------: | ----------------: | ----------: |
+| Aashirvaad Iodised Salt                    |      1,000 |                19 |        0.02 |
+| Onion                                      |      1,000 |                21 |        0.02 |
+| Onion                                      |      3,000 |                57 |        0.02 |
+| Shubh Kart Nirmal Sugandhi Mogra Wet Dhoop |      1,160 |                28 |        0.02 |
+| Tata Salt                                  |      1,000 |                24 |        0.02 |
+| Vicks Cough Drops Menthol                  |      1,160 |                20 |        0.02 |
+| Baby Potato                                |        500 |                16 |        0.03 |
+| Beetroot                                   |        500 |                13 |        0.03 |
+| Carrot                                     |        500 |                15 |        0.03 |
+| Potato                                     |      1,000 |                29 |        0.03 |
+
+**Insight:** Bulk and larger-pack products generally provide strong value when measured on a per-gram basis. Staples such as **salt, onions, and potatoes** demonstrate particularly low unit costs.
+
+---
+
+### 7. 📏 Product Weight Classification
+
+Products were grouped into **Low, Medium, and Bulk** weight categories to better understand inventory characteristics.
+
+| Product          | Weight (g) | Weight Category |
+| ---------------- | ---------: | --------------- |
+| Onion            |      1,000 | Medium          |
+| Tomato Hybrid    |      1,000 | Medium          |
+| Tender Coconut   |         58 | Low             |
+| Coriander Leaves |        100 | Low             |
+| Ladies Finger    |        250 | Low             |
+| Potato           |      1,000 | Medium          |
+| Lemon            |        200 | Low             |
+| Watermelon       |         58 | Low             |
+| Capsicum Green   |        250 | Low             |
+| Chilli Green     |        100 | Low             |
+
+**Insight:** Most of the analyzed products fall into the **Low-weight category**, while staple vegetables such as onions, potatoes, and tomatoes fall into the Medium category.
+
+---
+
+### 8. 📦 Inventory Weight by Category
+
+Inventory weight analysis was used to understand the physical volume represented by different product groups.
+
+| Product          | Weight (g) | Weight Category |
+| ---------------- | ---------: | --------------- |
+| Onion            |      1,000 | Medium          |
+| Tomato Hybrid    |      1,000 | Medium          |
+| Potato           |      1,000 | Medium          |
+| Tender Coconut   |         58 | Low             |
+| Coriander Leaves |        100 | Low             |
+| Ladies Finger    |        250 | Low             |
+| Lemon            |        200 | Low             |
+| Watermelon       |         58 | Low             |
+| Capsicum Green   |        250 | Low             |
+| Chilli Green     |        100 | Low             |
+
+**Insight:** Weight classification provides an additional perspective on inventory management by highlighting products that may require different **storage, handling, and replenishment strategies**.
+
+---
+
+## 📌 Overall Business Takeaways
+
+The analysis highlights several important business patterns:
+
+* **Cooking Essentials and Munchies** are the strongest estimated revenue contributors.
+* **Fruits & Vegetables** have the highest average discount, indicating greater promotional activity.
+* Several **high-MRP products have minimal discounts**, suggesting stronger pricing power.
+* **High-value stockouts** represent potential lost-sales opportunities.
+* Bulk products can provide significantly better **value per gram**.
+* Weight-based segmentation can support more effective **inventory, storage, and logistics planning**.
+* Discount analysis can help identify opportunities for **pricing optimization and promotional strategy**.
+
+### 🎯 Conclusion
+
+This project demonstrates how e-commerce inventory data can be transformed into **actionable business insights**. By combining pricing, discount, revenue, availability, and inventory-weight analysis, the project provides a practical view of how data analytics can support **pricing decisions, inventory optimization, revenue growth, and operational efficiency**.
+
